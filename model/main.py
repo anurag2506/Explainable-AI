@@ -183,8 +183,8 @@ def main():
     connection = connectDB("postgress", db_config)
     query = "Find stock-profiles having MRF as one of their stocks and provide their names"
     table= "stakeholders"
-    relations, insights = process_query_with_insights(query,table, connection)
-    print(relations)
+    insights = process_query_with_insights(query,table, connection)
+    print(insights)
 
 
 if __name__ == "__main__":
